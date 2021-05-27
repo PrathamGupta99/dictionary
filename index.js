@@ -25,7 +25,7 @@ function searchButtonHandler() {
     let word = search.value
     console.log(word)
 
-    xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&pageSize=100&sortBy=publishedAt&apiKey=b7ae0b7347264f3a8815a10873840290`, true)
+    xhr.open('GET', `https://saurav.tech/NewsAPI/top-headlines/category/health/in.json`, true)
     // xhr.open('GET', `https://api.dictionaryapi.dev/api/v2/entries/hi/guru`, true)
 
     let tableBody = document.getElementById('tbody')
