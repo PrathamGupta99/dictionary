@@ -32,6 +32,17 @@ function searchButtonHandler() {
     xhr.onload = function () {
         console.log("Fetching Starts")
         tableBody.innerHTML = ''
+        str = `<thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Word</th>
+                        <th scope="col">Part of Speech</th>
+                        <th scope="col">Definition</th>
+                        <th scope="col" id="show">Examples</th>
+                    </tr>
+                </thead>`
+        tableBody.innerHTML += str
+        str=''
         if (this.status === 200 && english.checked) {
             let show = document.getElementById("show")
             show.classList.remove(`none`)
