@@ -26,7 +26,7 @@ function searchButtonHandler() {
     console.log(word)
 
     xhr.open('GET', `https://saurav.tech/NewsAPI/top-headlines/category/health/in.json`, true)
-    // xhr.open('GET', `https://api.dictionaryapi.dev/api/v2/entries/hi/guru`, true)
+    // xhr.open('GET', `https://api.dictionaryapi.dev/api/v2/entries/hi/guru`, true) 
 
     let tableBody = document.getElementById('tbody')
     xhr.onload = function () {
